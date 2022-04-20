@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".operacionesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+        <EditText
+            android:id="@+id/nro1"
+            android:textColor="#CD0F0F"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+        <EditText
+            android:id="@+id/nro2"
+            android:textColor="#CD0F0F"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/txt_resultado"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            />
+
+
+        <Button
+
+            android:id="@+id/SUMA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMA"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+        <Button
+            android:id="@+id/RESTA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTA"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+        <Button
+            android:id="@+id/DIVISION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIVISION"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+        <Button
+            android:id="@+id/MULTIPLICACION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICACION"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+        <Button
+            android:id="@+id/RAIZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RAIZ"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+        <Button
+            android:id="@+id/EXPONENCIAL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXPONENCIAL"
+            android:textStyle="italic"
+            android:backgroundTint="#FF5722"/>
+    </LinearLayout>
+
+
+</FrameLayout>

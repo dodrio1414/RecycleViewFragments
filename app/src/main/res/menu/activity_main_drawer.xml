@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_0"
+            android:icon="@drawable/ic_user"
+            android:title="User" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
+        <item android:title="Calculadora">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/operacionesFragment"
+                        android:icon="@drawable/ic_calculate"
+                        android:title="Calculadora" />
+
+                </group>
+            </menu>
+
+        </item>
+
+        <item android:title="Music">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/music"
+                        android:icon="@drawable/ic_music"
+                        android:title="Music" />
+
+                </group>
+            </menu>
+
+        </item>
+
+        <item android:title="Web">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/webFragment"
+                        android:icon="@drawable/ic_web"
+                        android:title="Web" />
+
+                </group>
+            </menu>
+
+        </item>
+
+        <item android:title="APK">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/apkFragment"
+                        android:icon="@drawable/ic_web"
+                        android:title="APK" />
+
+                </group>
+            </menu>
+
+        </item>
+
+        <item android:title="Turism">
+
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/turismFragment"
+                        android:icon="@drawable/ic_turism"
+                        android:title="Turism" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Cusco">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/cuscoFragment"
+                        android:icon="@drawable/ic_turism"
+                        android:title="Cusco" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="slideshow" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/image1Fragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Image 1" />
+        <item
+            android:id="@+id/image2Fragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Image 2" />
+        <item
+            android:id="@+id/image3Fragment"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Image 3" />
+
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@drawable/ic_contacts"
+            android:title="Contacts" />
+        <item
+            android:id="@+id/nav_4"
+            android:icon="@drawable/ic_file"
+            android:title="Files" />
+        <item
+            android:id="@+id/nav_5"
+            android:icon="@drawable/ic_downloads"
+            android:title="Download" />
+
+        <item
+            android:id="@+id/nav_6"
+            android:icon="@drawable/ic_uploads"
+            android:title="Upload" />
+
+
+
+    </group>
+</menu>

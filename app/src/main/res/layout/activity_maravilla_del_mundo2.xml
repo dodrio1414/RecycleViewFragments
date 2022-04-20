@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maravillaDelMundo2">
+
+    <TextView
+        android:id="@+id/txt_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Maravillas del Mundo"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/txt_maravillasNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Coliseo Romano"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillas"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/img_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillasNombre"
+        android:src="@drawable/coliseo"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="451dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_maravillas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_maravillasInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="El coliseo romano es un anfiteatro construido en el siglo I, más precisamente en la época del Imperio Romano. El mismo se encuentra ubicado en el centro de la ciudad de Roma, Italia cuya denominación original es Anfiteatro Flavio, el cual hace referencia a la dinastía Flavia de emperadores que lo construyeron.
+
+A posteriori adoptó el nombre de Coliseo y es por el cual es conocido en la actualidad. Dicho nombre se debe a un gran monumento ubicado de manera cercana, el cual es El coloso de Nerón. Uno de los datos más significativos es que fue declarado patrimonio de la humanidad en el año 1980, por la UNESCO y es una de Las Siete Maravillas del Mundo Moderno.
+
+Por otra parte, es importante mencionar que el Coliseo fue construido con materiales de excelente calidad, como lo son los bloques de travertino, madera, ladrillo, piedra, hormigón, estuco y mármol.
+
+El Coliseo Romano es un impresionante anfiteatro construido en el siglo I en honor a la dinastía Flavia que era un grupo de emperadores que impulsó su construcción. Siglos más tarde se le llamó el Colosseum debido a que durante la época del emperador Nerón se construyó una gran estatua al lado del Coliseo a la que se le llamó el Coloso de Nerón. Actualmente esta estatua no existe ya que siglos después fué utilizada para servir como material de construcción para otras obras arqueológicas.
+
+Esta impresionante construcción de grandes dimensiones es capaz de albergar a más de 50000 espectadores que acudían a este lugar para ver las luchas de gladiadores y bestias salvajes así como otros espectáculos.
+
+El Coliseo se empezó a construir en el año 70 DC durante el gobierno del Emperador Vespasiano y fue terminado en el año 80 DC por el Emperador Tito. Para su inauguración se realizó una gran celebración que duró 100 días en el cual se invitó gratuitamente al pueblo romano a ver los espectáculos en la arena."
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

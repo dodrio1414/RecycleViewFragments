@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maravillaDelMundo6">
+    <TextView
+        android:id="@+id/txt_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Maravillas del Mundo"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/txt_maravillasNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="La ciudad de Petra"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillas"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/img_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillasNombre"
+        android:src="@drawable/petra"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="451dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_maravillas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_maravillasInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Los nabateos eran un pueblo árabe nómada dedicado al comercio en su mayor parte, que se asentó en la zona de Petra a finales del siglo VI a.C por las características de la región: a diferencia de otras zonas de Jordania, Petra disponía de abundante agua. Además, su localización bastante escondida entre montañas y su difícil acceso, permitió a los nabateos asentarse en este lugar y convertirlo en una ciudad con carácter defensivo.
+
+Petra se convirtió posteriormente en un gran enclave para las rutas comerciales que conectaban China con Roma, la ruta de la seda y las especias. Debido a la gran cantidad de agua de la que disponían y la protección que ofrecía su localización, era la zona ideal para descansar del largo viaje. A cambio de su hospitalidad los nabateos cobraban algo parecido a un impuesto, lo que les permitió desarrollarse económicamente.
+
+Conocidos por sus habilidades como comerciantes, con conocimientos de cerámica heredados de los edomitas, sus conocimientos sobre canalización de agua y sus grandes habilidades arquitectónicas, los nabateos prosperaron y convirtieron Petra en una ciudad ejemplar. Su evolución arquitectónica es muy visible: en un primer lugar excavaron habitaciones con fachadas lisas en las rocas, imitación de las famosas tumbas sirias. Al estar en continuo contacto con otras civilizaciones, se inspiraron en sus estilos, como el egipcio; pero manteniendo en sus casas el estilo árabe. Así, sus construcciones se han convertido en en monumentos históricos y protegidos por la UNESCO."
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

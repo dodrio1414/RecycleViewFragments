@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".maravillaDelMundo4">
+    <TextView
+        android:id="@+id/txt_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Maravillas del Mundo"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:id="@+id/txt_maravillasNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="MachuPichu"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#00BCD4"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillas"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/img_maravillas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maravillasNombre"
+        android:src="@drawable/machupicchu"
+        tools:layout_editor_absoluteX="13dp" />
+
+    <ScrollView
+        android:layout_width="414dp"
+        android:layout_height="451dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_maravillas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_maravillasInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Se cree que la ciudadela de Machu Picchu fue construida alrededor de 1450 por órdenes de Pachacútec, el primer gran soberano del Imperio incaico. El lujoso complejo urbano se mandó a edificar entre las montañas de Machu Picchu y Huayna Picchu, que se alzan sobre el Valle Sagrado de los Incas. Además de estar cerca de la capital incaica de Cuzco, las condiciones climáticas y geográficas de esta zona eran ideales para el cultivo del maíz y de la coca, planta medicinal de gran valor ritual para los incas.
+Machu Picchu era una clásica llacta incaica, con una población móvil que oscilaba entre los 300 y 1000 habitantes. La ciudadela se dividía en dos áreas: en la zona urbana se encontraban las residencias y los recintos religiosos, como el Templo del Sol o Torréon, mientras que la zona agrícola consistía en varias terrazas de cultivo escalonadas construidas sobre la ladera de la montaña.
+
+A pesar de su esplendor, el Imperio incaico se vio debilitado por el inicio de una guerra civil en el año 1529, y en 1532 fue anexado a los territorios de la Corona española. Aunque los españoles probablemente sabían de su existencia, la ubicación remota de Machu Picchu hizo que fuera considerablemente ignorada por el régimen colonial; prueba de ello es que no se construyeron templos cristianos en la ciudadela, algo común en los sitios de culto “paganos” conquistados por los españoles. Menos de un siglo después de su creación, Machu Picchu quedó deshabitada, y pronto quedó cubierta por la densa vegetación de la montaña."
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
